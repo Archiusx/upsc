@@ -701,3 +701,15 @@ html[data-theme="dark"] .la-fc-tag-ans {
   .la-stat-val { font-size: 1rem; }
   .la-fc-header, .la-quiz-header { padding: 1.25rem; }
 }
+
+/* === FIX BUTTON LAYOUT ISSUE === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn svg {
+  display: inline-block;
+}
