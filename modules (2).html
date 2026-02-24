@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Modules — UPSC Civil Services Portal</title>
+  <meta name="description" content="Complete UPSC study modules — GS Paper 1, 2, 3, 4, CSAT, Essay, Optional Subject & Interview Prep. Prelims and Mains both covered."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styling.css"/>
+  <link rel="stylesheet" href="modules.css"/>
+</head>
+<body class="ready">
+
+<!-- ── HEADER ─────────────────────────────── -->
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <div class="logo-section">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </a>
+        <div class="brand-text">
+          <h1>UPSC Portal</h1>
+          <p>India's Civil Services Preparation Hub</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0z"/></svg>
+          <span>Join Channel</span>
+        </a>
+        <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          Enroll Now
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1021 12.79z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── NAV ────────────────────────────────── -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-container">
+      <a href="index.html" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Home
+      </a>
+      <a href="modules.html" class="nav-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Study Modules
+      </a>
+      <a href="index.html#pyq" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        PYQ Papers
+      </a>
+      <a href="index.html#tests" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Mock Tests
+      </a>
+      <a href="index.html#current-affairs" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Current Affairs
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ───────────────────────────────── -->
+<section class="modules-hero">
+  <div class="container">
+    <div class="modules-hero-inner">
+      <div class="modules-hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Updated for UPSC CSE 2026
+      </div>
+      <h2>Complete UPSC Study Modules</h2>
+      <p>Expert-crafted modules aligned to the <strong>official UPSC CSE syllabus</strong>. Choose Prelims or Mains preparation below. GS Paper 1 is unlocked for free!</p>
+
+      <div class="modules-hero-stats">
+        <div class="mhs-stat">
+          <span class="mhs-num">100</span>
+          <span class="mhs-lbl">Qs / Prelims Paper</span>
+        </div>
+        <div class="mhs-divider"></div>
+        <div class="mhs-stat">
+          <span class="mhs-num">2 hrs</span>
+          <span class="mhs-lbl">Paper Duration</span>
+        </div>
+        <div class="mhs-divider"></div>
+        <div class="mhs-stat">
+          <span class="mhs-num">–⅓</span>
+          <span class="mhs-lbl">Negative Marking</span>
+        </div>
+        <div class="mhs-divider"></div>
+        <div class="mhs-stat">
+          <span class="mhs-num">9</span>
+          <span class="mhs-lbl">GS Papers (Mains)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STAGE TABS ─────────────────────────── -->
+<div class="programme-tabs-wrap">
+  <div class="container">
+    <div class="programme-tabs" role="tablist">
+      <button class="ptab active" id="tab-prelims" role="tab" aria-selected="true" aria-controls="panel-prelims" data-tab="prelims">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <div>
+          <span class="ptab-title">Prelims Preparation</span>
+          <span class="ptab-sub">GS Paper 1 + CSAT (Paper 2)</span>
+        </div>
+        <span class="ptab-badge">2 Papers</span>
+      </button>
+      <button class="ptab" id="tab-mains" role="tab" aria-selected="false" aria-controls="panel-mains" data-tab="mains">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <div>
+          <span class="ptab-title">Mains Preparation</span>
+          <span class="ptab-sub">GS1 · GS2 · GS3 · GS4 · Essay</span>
+        </div>
+        <span class="ptab-badge ptab-badge-purple">5 GS Papers</span>
+      </button>
+      <button class="ptab" id="tab-optional" role="tab" aria-selected="false" aria-controls="panel-optional" data-tab="optional">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <div>
+          <span class="ptab-title">Optional Subject</span>
+          <span class="ptab-sub">30+ subjects available</span>
+        </div>
+        <span class="ptab-badge ptab-badge-green">Premium</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PRELIMS PANEL
+     ══════════════════════════════════════════ -->
+<div id="panel-prelims" class="modules-panel active" role="tabpanel" aria-labelledby="tab-prelims">
+  <div class="container">
+
+    <div class="exam-info-bar">
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Stage: <strong>Prelims 2026</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Duration: <strong>2 Hours / Paper</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+        Questions: <strong>100 MCQs</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Negative: <strong>–⅓ per wrong</strong>
+      </div>
+    </div>
+
+    <div class="modules-grid">
+
+      <!-- MODULE 01: GS Paper 1 — UNLOCKED ✅ -->
+      <div class="mod-card unlocked fade-in">
+        <div class="mod-header" style="background:linear-gradient(135deg,#b45309,#7c2d12)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 01</span>
+            <span class="mod-status open">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><path d="M9 11l3 3L22 4"/></svg>
+              Free Access
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>General Studies Paper 1</h3>
+          <p>History · Geography · Art & Culture · Society · Environment</p>
+          <div class="mod-qs-badge">100 Questions · Prelims GS Paper 1</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">100</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">18</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">2 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Ancient, Medieval & Modern Indian History</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Indian National Movement & Freedom Struggle</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Indian & World Geography — Physical, Social, Economic</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Indian Society, Social Issues & Diversity</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Art, Culture, Paintings, Architecture & Literature</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <a href="#" class="btn btn-primary btn-full">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Start Learning — Free
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 02: CSAT — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="CSAT — Paper 2 (Aptitude Test)">
+        <div class="mod-header" style="background:linear-gradient(135deg,#0891b2,#0e7490)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 02</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>CSAT — Paper 2</h3>
+          <p>Comprehension · Reasoning · Maths · Decision Making</p>
+          <div class="mod-qs-badge">80 Questions · Qualifying (33%)</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">80</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">10</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">2 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Reading Comprehension & English Language</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Logical Reasoning & Analytical Ability</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Basic Numeracy & Data Interpretation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Decision Making & Problem Solving</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>General Mental Ability & Interpersonal Skills</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="CSAT — Paper 2 (Aptitude Test)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 03: Current Affairs — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Current Affairs & Static GK (Prelims)">
+        <div class="mod-header" style="background:linear-gradient(135deg,#059669,#047857)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 03</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Current Affairs & Static GK</h3>
+          <p>Polity · Economy · Science · Environment · Schemes</p>
+          <div class="mod-qs-badge">~40 Questions from Current Affairs</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">~40</span><span class="ms-lbl">Qs Expected</span></div>
+            <div class="ms-item"><span class="ms-val">12</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">Daily</span><span class="ms-lbl">Updates</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>National & International Current Events</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Government Schemes, Policies & Programmes</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Science & Technology, Space & Defence</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Economy, Budget, RBI & Banking Updates</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Awards, Reports, Summits & Appointments</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Current Affairs & Static GK (Prelims)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 04: Polity — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Indian Polity & Governance (Prelims)">
+        <div class="mod-header" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 04</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Indian Polity & Governance</h3>
+          <p>Constitution · Parliament · Judiciary · Federalism</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ High Weightage · 15–20 Qs/Year</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">15–20</span><span class="ms-lbl">Qs/Paper</span></div>
+            <div class="ms-item"><span class="ms-val">16</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">High</span><span class="ms-lbl">Priority</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Indian Constitution — Preamble, Parts, Schedules</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Fundamental Rights, Duties & DPSPs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Parliament, President, PM & Council of Ministers</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Supreme Court, High Courts & Judiciary</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Election Commission, CAG, UPSC, Finance Commission</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Indian Polity & Governance (Prelims)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 05: Economy — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Indian Economy (Prelims)">
+        <div class="mod-header" style="background:linear-gradient(135deg,#0284c7,#0369a1)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 05</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Indian Economy</h3>
+          <p>Planning · Budget · Banking · Trade · Agriculture</p>
+          <div class="mod-qs-badge">10–15 Questions · Growing Weightage</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">10–15</span><span class="ms-lbl">Qs/Paper</span></div>
+            <div class="ms-item"><span class="ms-val">14</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">High</span><span class="ms-lbl">Priority</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>National Income, GDP & Economic Growth</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Monetary Policy, RBI & Banking System</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Union Budget, Fiscal Policy & Taxation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Agriculture, Food Security & Rural Economy</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>International Trade, WTO & Balance of Payments</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Indian Economy (Prelims)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 06: Environment — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Environment & Ecology (Prelims)">
+        <div class="mod-header" style="background:linear-gradient(135deg,#16a34a,#15803d)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 06</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M17 8C8 10 5.9 16.17 3.82 19.14a4 4 0 0 0-.82 1.86"/><path d="M21.66 20a2 2 0 0 1-2.73.67C15.5 18.83 13 16 13 16s-1.5 6-6 6c0 0 2-6.17 2-9"/><path d="M11.47 5.47a5 5 0 0 1 7.06 7.06"/></svg>
+          </div>
+          <h3>Environment & Ecology</h3>
+          <p>Biodiversity · Climate · Protected Areas · Pollution</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ 10–15 Qs · Very High Trend</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">10–15</span><span class="ms-lbl">Qs/Paper</span></div>
+            <div class="ms-item"><span class="ms-val">11</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">Rising</span><span class="ms-lbl">Trend</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Ecology, Ecosystems & Biodiversity</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>National Parks, Wildlife Sanctuaries, Biosphere Reserves</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Climate Change, UNFCCC, Paris Agreement</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Pollution, Waste Management & Env. Laws</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#16a34a"><path d="M9 11l3 3L22 4"/></svg>Endangered Species, IUCN, CITES & CBD</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Environment & Ecology (Prelims)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 07: Science & Tech — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Science & Technology (Prelims)">
+        <div class="mod-header" style="background:linear-gradient(135deg,#dc2626,#991b1b)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 07</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>Science & Technology</h3>
+          <p>Space · Defence · Biotech · IT · Nuclear · Health</p>
+          <div class="mod-qs-badge">8–12 Questions · Current & Static</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">8–12</span><span class="ms-lbl">Qs/Paper</span></div>
+            <div class="ms-item"><span class="ms-val">10</span><span class="ms-lbl">Topics</span></div>
+            <div class="ms-item"><span class="ms-val">Medium</span><span class="ms-lbl">Priority</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>ISRO, Space Missions & Satellite Technology</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Biotechnology, Genetic Engineering & GMOs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Defence Tech, Missiles, Submarines & DRDO</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>AI, Blockchain, Cybersecurity & Digital India</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Nuclear Energy, Renewable Energy & Health Tech</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Science & Technology (Prelims)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 08: Prelims Test Series — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Prelims Full Mock Test Series">
+        <div class="mod-header" style="background:linear-gradient(135deg,#6366f1,#4338ca)">
+          <div class="mod-header-top">
+            <span class="mod-num">Module 08</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Prelims Mock Test Series</h3>
+          <p>50 Full-Length Tests + Section-wise Practice</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ 200+ Tests · All India Ranking</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">200+</span><span class="ms-lbl">Tests</span></div>
+            <div class="ms-item"><span class="ms-val">AIR</span><span class="ms-lbl">Ranking</span></div>
+            <div class="ms-item"><span class="ms-val">Live</span><span class="ms-lbl">Analytics</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">What's Included</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>50 Full-Length GS Paper 1 Mock Tests</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>50 Full-Length CSAT (Paper 2) Mock Tests</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>100+ Topic-Wise Sectional Tests</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>All India Ranking after every test</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>Detailed Explanation for every question</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Prelims Full Mock Test Series">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /modules-grid prelims -->
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MAINS PANEL
+     ══════════════════════════════════════════ -->
+<div id="panel-mains" class="modules-panel" role="tabpanel" aria-labelledby="tab-mains">
+  <div class="container">
+
+    <div class="exam-info-bar">
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Stage: <strong>Mains 2026</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Duration: <strong>3 Hours / Paper</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+        Total Marks: <strong>1750 Marks</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Format: <strong>Descriptive (No MCQ)</strong>
+      </div>
+    </div>
+
+    <div class="modules-grid">
+
+      <!-- MAINS M1: GS Paper 1 — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Mains GS Paper 1 — History, Geography & Society">
+        <div class="mod-header" style="background:linear-gradient(135deg,#b45309,#7c2d12)">
+          <div class="mod-header-top">
+            <span class="mod-num">GS Paper 1</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Mains GS Paper 1</h3>
+          <p>History · Indian Heritage · Geography · Society</p>
+          <div class="mod-qs-badge">250 Marks · 20 Questions</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">250</span><span class="ms-lbl">Marks</span></div>
+            <div class="ms-item"><span class="ms-val">20</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">3 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Indian Culture — Fine Arts, Classical Dances, Music</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Modern Indian History & World History</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Indian Geography — Resources, Disasters, Urbanisation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Indian Society — Diversity, Women, Globalisation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Answer Writing Practice + Model Answers</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Mains GS Paper 1 — History, Geography & Society">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS M2: GS Paper 2 — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Mains GS Paper 2 — Governance, Polity & IR">
+        <div class="mod-header" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">
+          <div class="mod-header-top">
+            <span class="mod-num">GS Paper 2</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Mains GS Paper 2</h3>
+          <p>Polity · Governance · Social Justice · International Relations</p>
+          <div class="mod-qs-badge">250 Marks · 20 Questions</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">250</span><span class="ms-lbl">Marks</span></div>
+            <div class="ms-item"><span class="ms-val">20</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">3 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Indian Constitution — Amendments, Provisions</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Governance, Transparency & E-Governance</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>Social Justice, Welfare Schemes & Inclusion</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>India's Foreign Policy & Bilateral Relations</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#7c3aed"><path d="M9 11l3 3L22 4"/></svg>International Organisations — UN, WTO, IMF, SAARC</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Mains GS Paper 2 — Governance, Polity & IR">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS M3: GS Paper 3 — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Mains GS Paper 3 — Economy, Environment & Security">
+        <div class="mod-header" style="background:linear-gradient(135deg,#0284c7,#0369a1)">
+          <div class="mod-header-top">
+            <span class="mod-num">GS Paper 3</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Mains GS Paper 3</h3>
+          <p>Economy · Environment · Technology · Security</p>
+          <div class="mod-qs-badge">250 Marks · 20 Questions</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">250</span><span class="ms-lbl">Marks</span></div>
+            <div class="ms-item"><span class="ms-val">20</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">3 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Indian Economy — Planning, Growth & Development</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Agriculture, Land Reforms & Food Management</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Science, Technology & Innovation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Environmental Conservation & Disaster Management</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0284c7"><path d="M9 11l3 3L22 4"/></svg>Internal Security — Terrorism, Extremism, Cybersecurity</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Mains GS Paper 3 — Economy, Environment & Security">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS M4: GS Paper 4 Ethics — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Mains GS Paper 4 — Ethics, Integrity & Aptitude">
+        <div class="mod-header" style="background:linear-gradient(135deg,#d97706,#b45309)">
+          <div class="mod-header-top">
+            <span class="mod-num">GS Paper 4</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Mains GS Paper 4</h3>
+          <p>Ethics · Integrity · Case Studies · Attitude</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ 250 Marks · Most Scoring Paper</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">250</span><span class="ms-lbl">Marks</span></div>
+            <div class="ms-item"><span class="ms-val">12</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">3 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">Key Topics</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#d97706"><path d="M9 11l3 3L22 4"/></svg>Ethics & Human Interface — Thinkers & Philosophers</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#d97706"><path d="M9 11l3 3L22 4"/></svg>Attitude, Emotional Intelligence & Motivation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#d97706"><path d="M9 11l3 3L22 4"/></svg>Public Service Values & Integrity</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#d97706"><path d="M9 11l3 3L22 4"/></svg>Case Studies — 6 Case Studies (125 Marks)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#d97706"><path d="M9 11l3 3L22 4"/></svg>Corruption, Governance & Probity in Public Life</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Mains GS Paper 4 — Ethics, Integrity & Aptitude">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS M5: Essay — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Essay Paper — Writing Skills & Structure">
+        <div class="mod-header" style="background:linear-gradient(135deg,#dc2626,#991b1b)">
+          <div class="mod-header-top">
+            <span class="mod-num">Essay Paper</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>Essay Paper</h3>
+          <p>Structure · Content · Language · Practice Essays</p>
+          <div class="mod-qs-badge">250 Marks · 2 Essays (1000–1200 words each)</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">250</span><span class="ms-lbl">Marks</span></div>
+            <div class="ms-item"><span class="ms-val">2</span><span class="ms-lbl">Essays</span></div>
+            <div class="ms-item"><span class="ms-val">3 hrs</span><span class="ms-lbl">Duration</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">What's Included</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Essay Writing Techniques & Structure</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>50+ Topic-wise Model Essays with Evaluation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Vocabulary, Idioms & Quotations for Essays</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Previous Year Essays Analysis (2013–2024)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#dc2626"><path d="M9 11l3 3L22 4"/></svg>Weekly Essay Practice with Expert Feedback</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Essay Paper — Writing Skills & Structure">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAINS M6: Answer Writing — LOCKED 🔒 -->
+      <div class="mod-card locked fade-in" data-locked="Daily Mains Answer Writing Program">
+        <div class="mod-header" style="background:linear-gradient(135deg,#059669,#047857)">
+          <div class="mod-header-top">
+            <span class="mod-num">Answer Writing</span>
+            <span class="mod-status locked-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Premium
+            </span>
+          </div>
+          <div class="mod-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Daily Answer Writing Program</h3>
+          <p>Daily practice with expert evaluation & model answers</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ Most Important for Mains Rank</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row">
+            <div class="ms-item"><span class="ms-val">Daily</span><span class="ms-lbl">Questions</span></div>
+            <div class="ms-item"><span class="ms-val">Expert</span><span class="ms-lbl">Evaluation</span></div>
+            <div class="ms-item"><span class="ms-val">1-on-1</span><span class="ms-lbl">Mentorship</span></div>
+          </div>
+          <div class="mod-topics">
+            <p class="mod-topics-label">What's Included</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>2 Mains questions daily (GS1-GS4 rotation)</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Personalised feedback within 24 hours</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Model answers with structure & content points</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Weekly compilation of best answers</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Score improvement tracking over time</li>
+            </ul>
+          </div>
+          <div class="mod-actions">
+            <button class="btn btn-lock btn-full" data-locked="Daily Mains Answer Writing Program">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Unlock — DM @upscportal
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /modules-grid mains -->
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     OPTIONAL SUBJECT PANEL
+     ══════════════════════════════════════════ -->
+<div id="panel-optional" class="modules-panel" role="tabpanel" aria-labelledby="tab-optional">
+  <div class="container">
+
+    <div class="exam-info-bar">
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Stage: <strong>Mains Optional</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Marks: <strong>500 Marks (2 Papers)</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg>
+        Subjects: <strong>48 choices available</strong>
+      </div>
+      <div class="eib-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/></svg>
+        Format: <strong>Descriptive, 3 hrs/paper</strong>
+      </div>
+    </div>
+
+    <div class="modules-grid">
+
+      <!-- Popular Optional Subjects — all locked -->
+      <div class="mod-card locked fade-in" data-locked="Public Administration Optional Subject">
+        <div class="mod-header" style="background:linear-gradient(135deg,#b45309,#7c2d12)">
+          <div class="mod-header-top"><span class="mod-num">Most Popular</span><span class="mod-status locked-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Premium</span></div>
+          <div class="mod-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3>Public Administration</h3><p>Organisations · Personnel · Financial Admin · Development</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ Most Chosen Optional · 500 Marks</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row"><div class="ms-item"><span class="ms-val">500</span><span class="ms-lbl">Marks</span></div><div class="ms-item"><span class="ms-val">2</span><span class="ms-lbl">Papers</span></div><div class="ms-item"><span class="ms-val">High</span><span class="ms-lbl">Overlap GS</span></div></div>
+          <div class="mod-topics"><p class="mod-topics-label">Key Topics</p><ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Administrative Theory & Organisations</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Indian Administration & Administrative Law</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Personnel & Financial Administration</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#b45309"><path d="M9 11l3 3L22 4"/></svg>Development Dynamics & Urban-Rural Administration</li>
+          </ul></div>
+          <div class="mod-actions"><button class="btn btn-lock btn-full" data-locked="Public Administration Optional Subject"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Unlock — DM @upscportal</button></div>
+        </div>
+      </div>
+
+      <div class="mod-card locked fade-in" data-locked="Sociology Optional Subject">
+        <div class="mod-header" style="background:linear-gradient(135deg,#0891b2,#0e7490)">
+          <div class="mod-header-top"><span class="mod-num">High Scorer</span><span class="mod-status locked-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Premium</span></div>
+          <div class="mod-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Sociology</h3><p>Sociological Thought · Social Structure · Change</p>
+          <div class="mod-qs-badge">500 Marks · Good Overlap with GS</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row"><div class="ms-item"><span class="ms-val">500</span><span class="ms-lbl">Marks</span></div><div class="ms-item"><span class="ms-val">2</span><span class="ms-lbl">Papers</span></div><div class="ms-item"><span class="ms-val">Medium</span><span class="ms-lbl">Difficulty</span></div></div>
+          <div class="mod-topics"><p class="mod-topics-label">Key Topics</p><ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Sociological Thought — Marx, Weber, Durkheim</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Indian Society, Caste & Social Stratification</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Rural & Urban Sociology, Tribal Communities</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#0891b2"><path d="M9 11l3 3L22 4"/></svg>Social Change, Modernisation & Globalisation</li>
+          </ul></div>
+          <div class="mod-actions"><button class="btn btn-lock btn-full" data-locked="Sociology Optional Subject"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Unlock — DM @upscportal</button></div>
+        </div>
+      </div>
+
+      <div class="mod-card locked fade-in" data-locked="Geography Optional Subject">
+        <div class="mod-header" style="background:linear-gradient(135deg,#059669,#047857)">
+          <div class="mod-header-top"><span class="mod-num">High Overlap</span><span class="mod-status locked-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Premium</span></div>
+          <div class="mod-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Geography</h3><p>Physical · Human · Economic · Regional Geography</p>
+          <div class="mod-qs-badge">500 Marks · GS1 Overlap Advantage</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row"><div class="ms-item"><span class="ms-val">500</span><span class="ms-lbl">Marks</span></div><div class="ms-item"><span class="ms-val">2</span><span class="ms-lbl">Papers</span></div><div class="ms-item"><span class="ms-val">High</span><span class="ms-lbl">Overlap</span></div></div>
+          <div class="mod-topics"><p class="mod-topics-label">Key Topics</p><ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Physical Geography — Geomorphology, Climatology</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Human Geography — Population, Migration, Settlement</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Economic Geography — Agriculture, Industry, Trade</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#059669"><path d="M9 11l3 3L22 4"/></svg>Regional Planning, Map Work & Practicals</li>
+          </ul></div>
+          <div class="mod-actions"><button class="btn btn-lock btn-full" data-locked="Geography Optional Subject"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Unlock — DM @upscportal</button></div>
+        </div>
+      </div>
+
+      <div class="mod-card locked fade-in" data-locked="More Optional Subjects — PSIR, Anthropology, History">
+        <div class="mod-header" style="background:linear-gradient(135deg,#6366f1,#4338ca)">
+          <div class="mod-header-top"><span class="mod-num">30+ Subjects</span><span class="mod-status locked-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Premium</span></div>
+          <div class="mod-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:28px;height:28px"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <h3>More Optional Subjects</h3><p>PSIR · Anthropology · History · Law · Literature & more</p>
+          <div class="mod-qs-badge exclusive-badge">⭐ 30+ Subjects Available</div>
+        </div>
+        <div class="mod-body">
+          <div class="mod-stats-row"><div class="ms-item"><span class="ms-val">30+</span><span class="ms-lbl">Subjects</span></div><div class="ms-item"><span class="ms-val">500</span><span class="ms-lbl">Marks</span></div><div class="ms-item"><span class="ms-val">Custom</span><span class="ms-lbl">Guidance</span></div></div>
+          <div class="mod-topics"><p class="mod-topics-label">Available Optionals</p><ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>Political Science & International Relations (PSIR)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>Anthropology, History, Law & Economics</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>Mathematics, Physics, Chemistry & Engineering</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:13px;height:13px;color:#6366f1"><path d="M9 11l3 3L22 4"/></svg>Literature optionals — Hindi, Marathi, Telugu etc.</li>
+          </ul></div>
+          <div class="mod-actions"><button class="btn btn-lock btn-full" data-locked="More Optional Subjects — PSIR, Anthropology, History"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Unlock — DM @upscportal</button></div>
+        </div>
+      </div>
+
+    </div><!-- /modules-grid optional -->
+  </div>
+</div>
+
+<!-- ── LOCK MODAL ──────────────────────────── -->
+<div class="modal-bg" id="lockModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-icon-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    </div>
+    <h3 id="modalTitle">Premium Module</h3>
+    <p id="modalDesc">This module is part of the premium UPSC course. Message us on Telegram to unlock full access.</p>
+    <div class="modal-btns">
+      <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Message @upscportal on Telegram
+      </a>
+      <a href="mailto:upscportal@gmail.com" class="btn btn-outline btn-full">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Us
+      </a>
+      <button class="btn btn-ghost btn-full" id="modalCancel">Maybe Later</button>
+    </div>
+  </div>
+</div>
+
+<script src="modules.js"></script>
+</body>
+</html>
