@@ -1016,3 +1016,11 @@ html {
   .offer-card:hover { transform: none; }
   .stat-card:hover  { transform: none; }
 }
+.card-featured { border:2px solid rgba(180,83,9,.3); position:relative; background:linear-gradient(160deg,#fffbf5 0%,#ffffff 60%); box-shadow:0 4px 20px rgba(180,83,9,.10); }
+.card-featured:hover { border-color:rgba(180,83,9,.55)!important; box-shadow:0 8px 32px rgba(180,83,9,.18)!important; transform:translateY(-3px)!important; }
+.card-featured-badge { display:inline-flex; align-items:center; gap:.35rem; background:#16a34a; color:#fff; font-size:.7rem; font-weight:700; letter-spacing:.04em; padding:.3rem .8rem; border-radius:0 0 var(--radius) 0; position:absolute; top:0; left:0; text-transform:uppercase; }
+.card-module-preview { display:flex; flex-direction:column; gap:.4rem; padding:.75rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:1rem; }
+.cmp-item { display:flex; align-items:center; gap:.5rem; font-size:.8rem; color:var(--text-secondary); }
+.cmp-item.cmp-free span { color:#15803d; font-weight:600; }
+.card-featured-btn { display:flex!important; background:linear-gradient(135deg,#b45309,#7c2d12)!important; border-color:#b45309!important; font-size:.9rem!important; padding:.875rem 1.25rem!important; box-shadow:0 4px 14px rgba(180,83,9,.30)!important; }
+.card-featured-btn:hover { background:linear-gradient(135deg,#92400e,#6b1f0a)!important; box-shadow:0 6px 20px rgba(180,83,9,.40)!important; }
