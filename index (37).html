@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>UPSC Portal — Complete IAS/IPS Preparation Hub</title>
+  <meta name="description" content="UPSC Portal – India's best preparation hub for IAS, IPS, IFS Civil Services Examination. PYQs, Study Modules, Mock Tests, Current Affairs, Video Lectures & more."/>
+  <meta name="keywords" content="UPSC,UPSC 2026,IAS preparation,IPS exam,Civil Services,UPSC prelims,UPSC mains,UPSC PYQ,mock test,current affairs,NCERT notes,optional subject"/>
+  <meta name="author" content="UPSC Portal"/>
+  <meta name="robots" content="index,follow"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="styling.css"/>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  SPLASH SCREEN                       ║
+     ╚══════════════════════════════════════╝ -->
+<div id="splash" role="status" aria-label="Loading">
+  <div class="splash-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <polyline points="9 22 9 12 15 12 15 22"/>
+    </svg>
+  </div>
+  <div class="splash-name">UPSC Portal</div>
+  <div class="splash-bar-wrap"><div class="splash-bar"></div></div>
+</div>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  HEADER                              ║
+     ╚══════════════════════════════════════╝ -->
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+
+      <div class="logo-section">
+        <div class="logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>UPSC Portal</h1>
+          <p>India's Civil Services Preparation Hub</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+
+        <!-- Telegram -->
+        <a href="https://t.me/upscportal"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-ghost btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0z"/>
+          </svg>
+          <span>Join Channel</span>
+        </a>
+
+        <!-- Enroll -->
+        <a href="https://t.me/upscportal"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          Enroll Now
+        </a>
+
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+          <svg id="themeIcon" viewBox="0 0 24 24" fill="none">
+            <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1021 12.79z"
+                  stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  NAVIGATION                          ║
+     ╚══════════════════════════════════════╝ -->
+<nav class="nav" aria-label="Site navigation">
+  <div class="container">
+    <div class="nav-container">
+
+      <a href="#notice" class="nav-link active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        Announcements
+      </a>
+
+      <a href="#pyq" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        PYQ Papers
+      </a>
+
+      <a href="#notes" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Study Material
+      </a>
+
+      <a href="#current-affairs" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Current Affairs
+      </a>
+
+      <a href="#tests" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Mock Tests
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;color:#94a3b8;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </a>
+
+      <a href="#mains" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Mains Writing
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;color:#94a3b8;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </a>
+
+      <a href="#video" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        Video Lectures
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;color:#94a3b8;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </a>
+
+      <a href="#interview" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Interview Prep
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;color:#94a3b8;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </a>
+
+      <a href="#books" class="nav-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Books & NCERT
+      </a>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  HERO                                ║
+     ╚══════════════════════════════════════╝ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <h2>UPSC Civil Services Portal</h2>
+      <p>Your complete preparation platform for IAS, IPS & IFS examinations. Access Prelims PYQs, Mains study material, current affairs, mock tests, and expert resources — all in one place.</p>
+
+      <div class="hero-ctas">
+        <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-white">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Enroll in Complete Course
+        </a>
+        <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-outline-white">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Join Telegram
+        </a>
+        <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-outline-white">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Free Study Channel
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num count-up" data-target="25000" data-suffix="+">0</div>
+          <div class="hero-stat-lbl">Aspirants Enrolled</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num count-up" data-target="200" data-suffix="+">0</div>
+          <div class="hero-stat-lbl">Mock Tests</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">10 Years</div>
+          <div class="hero-stat-lbl">PYQ Collection</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">24/7</div>
+          <div class="hero-stat-lbl">Access Available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  MAIN CONTENT                        ║
+     ╚══════════════════════════════════════╝ -->
+<main class="main">
+  <div class="container">
+
+    <!-- ── ANNOUNCEMENTS ─────────────────── -->
+    <section class="section" id="notice">
+      <div class="notice-board">
+        <div class="notice-board-header">
+          <div class="notice-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <div>
+            <h3>Announcements & Important Updates</h3>
+            <p>Stay updated with latest UPSC notifications</p>
+          </div>
+        </div>
+
+        <div class="notice-list">
+
+          <div class="notice-item">
+            <div class="notice-item-left">
+              <div class="notice-dot"></div>
+              <span class="notice-text">
+                📢 <strong>UPSC CSE 2026 Notification Released!</strong><br>
+                Civil Services Prelims 2026 notification has been officially released by UPSC. Check eligibility, syllabus & important dates.
+              </span>
+            </div>
+            <a href="https://upsc.gov.in" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View Notification
+            </a>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-item-left">
+              <div class="notice-dot"></div>
+              <span class="notice-text">
+                🗓️ <strong>UPSC Prelims 2026 Date Announced</strong> — Civil Services (Preliminary) Examination 2026 scheduled. Register before the deadline.
+              </span>
+            </div>
+            <a href="https://upsc.gov.in" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View Date
+            </a>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-item-left">
+              <div class="notice-dot"></div>
+              <span class="notice-text">Previous Year Question Papers (Prelims + Mains) 2014–2024 now available with detailed solutions</span>
+            </div>
+            <a href="#pyq" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              View Papers
+            </a>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-item-left">
+              <div class="notice-dot"></div>
+              <span class="notice-text">📅 <strong>Weekly Test Series</strong> — New Prelims mock test every Sunday at 10 AM. Track your all-India rank!</span>
+            </div>
+            <a href="#tests" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Join Test
+            </a>
+          </div>
+
+        </div>
+
+        <div style="padding:0 .875rem .875rem;">
+          <div class="alert alert-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span><strong>Syllabus 2026:</strong> UPSC Civil Services 2026 syllabus is same as 2025. Focus on GS Paper 1-4, Essay, and your Optional subject for Mains.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── QUICK STATS ────────────────────── -->
+    <div class="stats">
+      <div class="stat-card fade-in">
+        <div class="stat-number count-up" data-target="25000" data-suffix="+">0</div>
+        <div class="stat-label">Aspirants Enrolled</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number count-up" data-target="200" data-suffix="+">0</div>
+        <div class="stat-label">Mock Tests</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number">10 Years</div>
+        <div class="stat-label">PYQ Collection</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number count-up" data-target="500" data-suffix="+">0</div>
+        <div class="stat-label">Video Lectures</div>
+      </div>
+    </div>
+
+    <!-- ── RESOURCE CARDS ─────────────────── -->
+    <div class="card-grid">
+
+      <!-- Prelims PYQ -->
+      <div id="pyq" class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="card-title">Prelims PYQ Papers</h3>
+          <p class="card-description">GS Paper 1 & CSAT — 2014 to 2024</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Complete collection of UPSC Prelims question papers with detailed explanations, topic-wise analysis, and most repeated concepts highlighted.</p>
+          <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Unlock Access
+          </a>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Prelims PYQ Papers">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Study Modules -->
+      <div id="notes" class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3 class="card-title">GS Study Material</h3>
+          <p class="card-description">GS1, GS2, GS3, GS4 — Topic-wise notes</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Comprehensive study modules covering History, Geography, Polity, Economy, Environment, Science & Technology, Ethics — curated for Prelims & Mains both.</p>
+          <a href="modules.html" class="btn btn-primary btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            View Study Modules
+          </a>
+        </div>
+      </div>
+
+      <!-- Current Affairs -->
+      <div id="current-affairs" class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="card-title">Current Affairs</h3>
+          <p class="card-description">Daily, Monthly & Yearly compilations</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">UPSC-focused current affairs with daily updates, monthly magazines, yearly compilations, and editorial analysis — covering national, international, economy & environment.</p>
+          <button class="btn btn-primary btn-full" data-locked="Current Affairs">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Access Current Affairs
+          </button>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Current Affairs">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Mock Tests -->
+      <div id="tests" class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3 class="card-title">Prelims Mock Tests</h3>
+          <p class="card-description">200+ full-length & sectional mock tests</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Full-length Prelims mock tests with AI-powered performance analysis, all-India ranking, weak area identification, and detailed answer explanations.</p>
+          <button class="btn btn-primary btn-full" data-locked="Prelims Mock Tests">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Start Mock Test
+          </button>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Prelims Mock Tests">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Mains Answer Writing -->
+      <div id="mains" class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3 class="card-title">Mains Answer Writing</h3>
+          <p class="card-description">GS1-GS4 + Essay practice with evaluation</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Daily Mains answer writing practice with expert evaluation, model answers, and personalized feedback. Improve structure, content, and presentation skills.</p>
+          <button class="btn btn-primary btn-full" data-locked="Mains Answer Writing">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            Start Writing Practice
+          </button>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Mains Answer Writing">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Video Lectures -->
+      <div id="video" class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3 class="card-title">Video Lectures</h3>
+          <p class="card-description">500+ recorded & live concept sessions</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">500+ expert video lectures covering entire UPSC syllabus — History, Polity, Geography, Economy, Ethics & more. Short 10-15 min focused videos for better retention.</p>
+          <button class="btn btn-primary btn-full" data-locked="Video Lectures">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Watch Lectures
+          </button>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Video Lectures">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Interview Preparation -->
+      <div id="interview" class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="card-title">Interview / Personality Test</h3>
+          <p class="card-description">UPSC IAS Board Interview preparation</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Complete IAS Interview preparation — mock interviews, DAF-based question bank, current affairs for interview, personality development, and expert tips from former board members.</p>
+          <button class="btn btn-primary btn-full" data-locked="Interview Preparation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Prepare for Interview
+          </button>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Interview Preparation">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Optional Subject -->
+      <div class="card fade-in card-locked">
+        <div class="card-header">
+          <div class="card-icon icon-indigo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="card-title">Optional Subject</h3>
+          <p class="card-description">30+ optional subjects covered</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Structured study material and PYQs for 30+ UPSC optional subjects — Public Administration, Sociology, Geography, History, Political Science, PSIR, Anthropology, and more.</p>
+          <button class="btn btn-primary btn-full" data-locked="Optional Subject Material">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            Choose Your Optional
+          </button>
+        </div>
+        <div class="card-lock-footer">
+          <span class="lock-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Premium Access Required
+          </span>
+          <button class="btn btn-outline btn-sm" data-locked="Optional Subject Material">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Books & NCERT -->
+      <div id="books" class="card fade-in">
+        <div class="card-header">
+          <div class="card-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="card-title">Books & NCERT Resources</h3>
+          <p class="card-description">Expert-recommended standard books list</p>
+        </div>
+        <div class="card-body">
+          <p class="card-content">Curated list of must-read books — NCERT class 6-12, Laxmikanth, Spectrum, Bipin Chandra, GC Leong and more — with reading strategy and priority order.</p>
+          <a href="#" class="btn btn-primary btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Booklist
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /card-grid -->
+
+    <!-- ── STUDENT REVIEWS ─────────────────── -->
+    <section class="review-section">
+      <div class="section-header">
+        <h2 class="section-title">Trusted by IAS/IPS Aspirants Across India</h2>
+        <p class="section-description">Structured preparation, expert mentorship, and exam-aligned content that has helped thousands crack UPSC.</p>
+      </div>
+
+      <div class="review-grid">
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <div class="review-name">Arjun Sharma</div>
+              <div class="review-meta">IAS 2024 — All India Rank 47</div>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The GS modules are incredibly structured. Current affairs compilation saved me hours of newspaper reading every day. Highly recommend!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <div class="review-name">Priya Nair</div>
+              <div class="review-meta">IPS 2024 — Kerala Cadre</div>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Mock test series was a game changer. The detailed analytics helped me identify my weak areas in Prelims. Got 142 in GS Paper 1!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <div class="review-name">Rahul Verma</div>
+              <div class="review-meta">IAS 2023 — Rajasthan Cadre</div>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Answer writing feedback from mentors was exceptional. My Mains score improved by 80 marks in the second attempt. Best investment!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <div class="review-name">Sneha Reddy</div>
+              <div class="review-meta">IFS 2024 — First Attempt</div>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The NCERT-based notes and subject integration is brilliant. Cracked it in first attempt with this portal's guidance. Thank you!</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <div class="review-name">Vikram Singh</div>
+              <div class="review-meta">IPS 2023 — UP Cadre</div>
+            </div>
+          </div>
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">Ethics case studies practice was very relevant to actual exam. Essay writing program helped me score 130+ in Essay paper.</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-top">
+            <div class="review-avatar">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <div class="review-name">Kavya Menon</div>
+              <div class="review-meta">IAS 2024 — Karnataka Cadre</div>
+            </div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Interview preparation was outstanding. Mock board panels, DAF-based questions, and personality development sessions built my confidence.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /container -->
+</main>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  WHAT WE OFFER                       ║
+     ╚══════════════════════════════════════╝ -->
+<section class="offer-section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-description">Everything you need to crack UPSC Civil Services in one comprehensive platform</p>
+    </div>
+    <div class="offer-grid">
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Comprehensive GS Notes</div>
+          <div class="offer-desc">Topic-wise notes for GS1-GS4 covering entire UPSC syllabus with diagrams, maps, and quick revision sheets.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Daily Current Affairs</div>
+          <div class="offer-desc">UPSC-filtered daily current affairs with editorial analysis, monthly compendium, and yearly compilation.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-red">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Video Lectures</div>
+          <div class="offer-desc">500+ expert-recorded lectures covering all GS subjects, CSAT, Essay writing, and optional subjects.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Prelims Test Series</div>
+          <div class="offer-desc">200+ mock tests with all-India ranking, performance analytics, and detailed answer explanations.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-yellow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Mains Answer Writing</div>
+          <div class="offer-desc">Daily answer writing practice with expert evaluation, model answers, and 1-on-1 mentorship sessions.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Interview Preparation</div>
+          <div class="offer-desc">Mock IAS board interviews, DAF-based question bank, personality development by ex-board members.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-indigo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Mind Maps & Flowcharts</div>
+          <div class="offer-desc">Topic-wise visual mind maps for fast revision — perfect for last-minute preparation before Prelims & Mains.</div>
+        </div>
+      </div>
+
+      <div class="offer-card fade-in">
+        <div class="offer-icon icon-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <div class="offer-title">Weekly Test Series</div>
+          <div class="offer-desc">Fresh Prelims mock test every Sunday. Build consistency, track progress, and compete with aspirants nationwide.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  FOOTER                              ║
+     ╚══════════════════════════════════════╝ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h3>UPSC Portal</h3>
+        <p>India's most comprehensive Civil Services preparation platform. Trusted by thousands of IAS, IPS, and IFS aspirants preparing for UPSC examinations across the country.</p>
+        <div class="footer-social">
+          <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="social-btn" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="https://youtube.com/@upscportal" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+          <a href="https://instagram.com/upscportal" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="mailto:upscportal@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="#pyq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Prelims PYQ Papers</a>
+        <a href="#notes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>GS Study Material</a>
+        <a href="#current-affairs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Current Affairs</a>
+        <a href="#tests"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Mock Tests</a>
+        <a href="#mains"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Mains Writing</a>
+        <a href="#video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Video Lectures</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Exam Information</h3>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Exam Pattern</a>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Syllabus 2026</a>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Eligibility Criteria</a>
+        <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Cut-off Marks</a>
+        <a href="https://upsc.gov.in" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>UPSC Official Website</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact & Support</h3>
+        <a href="mailto:upscportal@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          upscportal@gmail.com
+        </a>
+        <a href="https://t.me/upscportal" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:11px;height:11px;"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          @upscportal
+        </a>
+        <a href="https://youtube.com/@upscportal" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px;"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/></svg>
+          YouTube Channel
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 UPSC Portal. All rights reserved. Designed for India's Civil Services aspirants.</p>
+      <p>upscportal.in</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ╔══════════════════════════════════════╗
+     ║  LOCK MODAL                          ║
+     ╚══════════════════════════════════════╝ -->
+<div class="modal-bg" id="lockModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-icon-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    </div>
+    <h3 id="modalTitle">Premium Content</h3>
+    <p id="modalDesc">This content is part of the premium UPSC course. Message us on Telegram to unlock full access.</p>
+    <div class="modal-btns">
+      <a href="https://t.me/upscportal" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Message on Telegram
+      </a>
+      <a href="mailto:upscportal@gmail.com" class="btn btn-outline btn-full">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Us
+      </a>
+      <button class="btn btn-ghost btn-full" id="modalCancel">Maybe Later</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
