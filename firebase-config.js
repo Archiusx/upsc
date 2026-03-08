@@ -3,15 +3,16 @@ import { getAuth, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // 🔥 REPLACE with your Firebase project config
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT",
-  storageBucket: "YOUR_PROJECT.firebasestorage.app",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyAkgKko5qRZxU8boI_2O-WPaz7_S-kK7oM",
+  authDomain: "loginpage-d13a7.firebaseapp.com",
+  databaseURL: "https://loginpage-d13a7-default-rtdb.firebaseio.com",
+  projectId: "loginpage-d13a7",
+  storageBucket: "loginpage-d13a7.firebasestorage.app",
+  messagingSenderId: "865928476680",
+  appId: "1:865928476680:web:5acd1373a023b02a03b9bd",
+  measurementId: "G-HL03R0R5XY"
 };
 
 const app = initializeApp(firebaseConfig);
