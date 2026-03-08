@@ -2,9 +2,8 @@
 // config.js — UPSC Portal Configuration
 
 export const APP_CONFIG = {
-  portalLocked: true,
-  approvedEmails: [],
-  redirectAfterLogin: "https://upscportal.in",
+  portalLocked: false,           // Now handled by Firebase auth
+  redirectAfterLogin: "modules.html",
   homeUrl: "https://upscportal.in",
   socialLinks: {
     telegram: "https://t.me/upscportal",
