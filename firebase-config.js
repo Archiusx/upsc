@@ -22,7 +22,8 @@ export const googleProvider = new GoogleAuthProvider();
 
 // Admin emails — full dashboard + admin panel access
 export const ADMIN_EMAILS = [
-  "admin@upscportal.in",   // ← replace with your admin email(s)
+  "co.2024.prdeshkar@bitwardha.ac.in",
+  "class11art@gmail.com"// ← replace with your admin email(s)
 ];
 
 // Premium exception emails — hardcoded premium access (no Firestore check needed)
